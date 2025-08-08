@@ -1,0 +1,8 @@
+spring:
+  ai:
+    openai:
+      api-key: sk-jwymgqbadkolbcarzoknrqjihjpphtiauwpxcxggaadjcoxt
+      base-url: https://api.siliconflow.cn
+      chat:
+        options:
+          model: Qwen/Qwen2-7B-Instruct
