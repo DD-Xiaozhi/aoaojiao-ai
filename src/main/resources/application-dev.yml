@@ -9,16 +9,34 @@ spring:
       chat:
         options:
           model: Qwen/Qwen2-7B-Instruct
+
     chat:
       memory:
         repository:
           jdbc:
             initialize-schema: never
 
+      client:
+        observations:
+          log-prompt: true
+
+      observations:
+        log-prompt: true
 
   datasource:
-    url: jdbc:mysql://localhost:3306/aoaojiao-ai?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://gz-cynosdbmysql-grp-abaejx7d.sql.tencentcdb.com:24524/aoaojiao-ai?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 123456
+    password: 32UkJQA_2!x2b.E
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    org:
+      springframework:
+        ai: DEBUG
