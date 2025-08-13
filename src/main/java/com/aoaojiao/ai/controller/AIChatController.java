@@ -13,7 +13,7 @@ import reactor.core.publisher.Flux;
 import java.nio.charset.StandardCharsets;
 
 /**
- * AI 聊天控制器
+ * AI 问答管理
  *
  * @author DD
  */
