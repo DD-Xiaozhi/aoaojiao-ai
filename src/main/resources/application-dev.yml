@@ -40,6 +40,4 @@ management:
 
 logging:
   level:
-    org:
-      springframework:
-        ai: DEBUG
+    org.springframework.ai: DEBUG
