@@ -26,6 +26,13 @@ spring:
       observations:
         log-prompt: true
 
+    vectorstore:
+      chroma:
+        client:
+          host: http://localhost
+          port: 8000
+        initialize-schema: true
+
   datasource:
     url: jdbc:mysql://gz-cynosdbmysql-grp-abaejx7d.sql.tencentcdb.com:24524/aoaojiao-ai?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root

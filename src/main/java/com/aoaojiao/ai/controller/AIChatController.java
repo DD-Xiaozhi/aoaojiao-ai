@@ -19,7 +19,7 @@ import java.nio.charset.StandardCharsets;
  */
 @RestController
 @AllArgsConstructor
-@RequestMapping("/chat")
+@RequestMapping("/ai/chat")
 public class AIChatController {
 
     private final ChatClient chatClient;
